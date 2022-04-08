@@ -1,0 +1,388 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Quicksand:wght@300;400;600&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Quicksand:wght@300;400&display=swap"); */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Quicksand", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  color: hsla(269, 98%, 17%, 0.865);
+  font-size: 18px;
+}
+/* ----------|  Navbar  |-----------  */
+
+.topbar li a {
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol"; */
+  padding: 1px 7px !important;
+  border-radius: 1px;
+  /* margin: 7px 7px 7px 7px;*/
+  margin: 14px 12.5px;
+  color: #29216e !important ;
+  font-weight: 400;
+  font-size: 18px;
+  transition: all 0.6s;
+}
+.topbar li a:hover {
+  color: #5200ac;
+  background-color: #ede4f7;
+}
+
+.navbar-brand {
+  padding-left: 50px;
+}
+#bmwmenu {
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar-brand {
+    padding-left: 0px;
+  }
+  #bmwmenu {
+    padding-right: 0px;
+  }
+  .topbar li a {
+    margin: 14px 9.1px;
+  }
+}
+
+.active {
+  color: #5200ac;
+  background-color: #ede4f7;
+}
+/* ----------|  ******  |-----------  */
+
+/* ----------|  HeroSection  |-----------  */
+
+.hero-background {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  /* background: url(/Images/hero.jpg); */
+  background: linear-gradient(
+      135deg,
+      hsla(348, 97%, 63%, 0.55),
+      hsla(230, 96%, 62%, 0.55)
+    ),
+    url(../Images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /* background-image: linear-gradient(red, yellow); */
+}
+.hero-text {
+  text-align: center;
+  align-self: center;
+  font-size: 28px;
+  color: white;
+  text-shadow: 0px 3.9px hsla(0, 0%, 41%, 0.418);
+}
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 40px;
+}
+.hero-text p {
+  font-size: 23px;
+  margin-bottom: 48px;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  text-shadow: none;
+  padding: 8px;
+  max-width: 200px;
+  background: rgba(255, 255, 255, 0.148);
+  border: solid 0.8px;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 100;
+  transition: all 1s;
+}
+.hero-button:hover {
+  color: gray;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.925);
+  border: solid gray 0.8px;
+}
+
+/* ---------------| Loop logo slider  |------------- */
+/* Slider */
+.slider {
+  height: 150px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+hr {
+  margin-top: -5px;
+  margin-bottom: 70px;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(calc(-250px * 9));
+  }
+}
+.slide {
+  height: 150px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.slide img {
+  width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+/* ---------------| About Us  |------------- */
+
+.about-head {
+  font-weight: 900;
+  color: #c10000;
+  display: block;
+  position: relative;
+}
+
+.about-head::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 35px;
+  background-color: rgba(82, 0, 172, 1);
+  top: 19px;
+  left: 230px;
+}
+.about-head-2 {
+  color: #2b0157;
+  font-weight: 550;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .leftcol {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+
+  .rightcol {
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+}
+
+.car-images {
+  margin: 20px 0;
+}
+
+.find-out {
+  margin-top: 25px;
+  text-align: right;
+  position: relative;
+}
+
+.find-out::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 39px;
+  background-color: rgba(82, 0, 172, 1);
+  top: 13px;
+  right: 228px;
+}
+
+/* ---------------| Clip Art  |------------- */
+.images-box {
+  background-color: #f7f7fd;
+  padding-top: 50px;
+  margin-top: 80px;
+}
+.car-para {
+  margin-bottom: 30px;
+}
+.car-grid-row {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.car-outside {
+  margin-top: -15px;
+  /* background-color: #5200ac; */
+  border: 2px solid white;
+  border-radius: 10px 10px 20px 10px;
+  padding: 15px;
+  /* width: 170px; */
+  /* height: 170px; */
+  /* position: relative; */
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.car-outside-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+  /* min-height: 403px; */
+  min-height: 403px;
+  /* width: 329px; */
+  background-image: url(../Images/car-grid/car-grid-1.jpg);
+}
+.car-outside-2 {
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 98%);
+  background-image: url(../Images/car-grid/car-grid-2.jpg);
+}
+.car-outside-3 {
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 96%);
+  background-image: url(../Images/car-grid/car-grid-3.jpg);
+}
+.car-outside-4 {
+  clip-path: polygon(0 6%, 100% 3%, 100% 100%, 0 100%);
+  height: 367px;
+  background-image: url(../Images/car-grid/car-grid-4.jpg);
+}
+.car-outside-5 {
+  clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+  background-image: url(../Images/car-grid/car-grid-5.jpg);
+}
+/* --------- */
+
+.car-inside {
+  background-color: rgba(0, 213, 255, 0.182);
+
+  border-radius: 10px;
+  /* width: 170px; */
+  /* height: 170px; */
+  padding: 10px;
+  height: 100%;
+  /* position: absolute;
+  top: 5px; */
+  background-color: #7e0167d7;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.car-outside:hover .car-inside {
+  opacity: 1;
+}
+.car-inside-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+}
+
+.car-inside-2 {
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 98%);
+}
+
+.car-inside-3 {
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 96%);
+}
+.car-inside-4 {
+  clip-path: polygon(0 6%, 100% 2%, 100% 98%, 0 100%);
+}
+.car-inside-5 {
+  clip-path: polygon(0 3%, 100% 0, 100% 98%, 0 100%);
+}
+
+/* ---------****** ---- Footter-Row ------ *******---------- */
+
+.footer-bg-img {
+  padding: 0px;
+  margin-top: 60px;
+  z-index: -1;
+}
+.footer-row {
+  padding-bottom: 30px;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  background-color: #271f6c;
+  margin-top: -30px;
+  z-index: 1;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-header {
+  padding-bottom: 20px;
+}
+.footer-web-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+/* .footer-col {
+} */
+.footer-col-1 {
+  flex: 1 1 30%;
+}
+.footer-col-2 {
+  flex: 1 1 20%;
+}
+.footer-col-3 {
+  flex: 1 1 20%;
+}
+.footer-col-4 {
+  flex: 1 1 20%;
+}
+
+@media only screen and (max-width: 761px) {
+  .footer-row {
+    text-align: center;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-row {
+    margin-top: -100px;
+  }
+}
+
+i {
+  margin: 5px;
+  width: 20px;
+  color: white;
+}
+
+.copywrite {
+  margin-top: 0.5px;
+  background-color: #271f6c;
+  color: white;
+  /* text-align: center; */
+  padding-top: 10px;
+  /* padding-bottom: 10px;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copywrite p {
+  display: block;
+}
