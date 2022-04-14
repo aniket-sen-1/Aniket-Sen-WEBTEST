@@ -239,6 +239,8 @@ hr {
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .car-outside-1 {
@@ -385,4 +387,21 @@ i {
 }
 .copywrite p {
   display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .car-outside {
+    margin-top: 10px;
+  }
+  .car-outside {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    min-height: 403px;
+  }
+  .car-inside {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .car-grid-row {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
