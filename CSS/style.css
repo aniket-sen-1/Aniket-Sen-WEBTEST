@@ -1,27 +1,22 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Quicksand:wght@300;400;600&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Quicksand:wght@300;400&display=swap"); */
-
+@import url("https://css.gg/arrow-up-r.css");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
-  /* font-family: "Quicksand", sans-serif; */
   font-family: "Open Sans", sans-serif;
   color: hsla(269, 98%, 17%, 0.865);
   font-size: 18px;
+  position: relative;
 }
+
 /* ----------|  Navbar  |-----------  */
 
 .topbar li a {
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol"; */
   padding: 1px 7px !important;
   border-radius: 1px;
-  /* margin: 7px 7px 7px 7px;*/
   margin: 14px 12.5px;
   color: #29216e !important ;
   font-weight: 400;
@@ -40,23 +35,10 @@ body {
   padding-right: 50px;
 }
 
-@media only screen and (max-width: 750px) {
-  .navbar-brand {
-    padding-left: 0px;
-  }
-  #bmwmenu {
-    padding-right: 0px;
-  }
-  .topbar li a {
-    margin: 14px 9.1px;
-  }
-}
-
 .active {
   color: #5200ac;
   background-color: #ede4f7;
 }
-/* ----------|  ******  |-----------  */
 
 /* ----------|  HeroSection  |-----------  */
 
@@ -75,7 +57,6 @@ body {
   background-size: cover;
   display: flex;
   justify-content: center;
-  /* background-image: linear-gradient(red, yellow); */
 }
 .hero-text {
   text-align: center;
@@ -182,18 +163,6 @@ hr {
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-  .leftcol {
-    padding-left: 100px;
-    padding-right: 50px;
-  }
-
-  .rightcol {
-    padding-left: 50px;
-    padding-right: 100px;
-  }
-}
-
 .car-images {
   margin: 20px 0;
 }
@@ -229,14 +198,9 @@ hr {
 }
 .car-outside {
   margin-top: -15px;
-  /* background-color: #5200ac; */
   border: 2px solid white;
   border-radius: 10px 10px 20px 10px;
   padding: 15px;
-  /* width: 170px; */
-  /* height: 170px; */
-  /* position: relative; */
-
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,9 +209,7 @@ hr {
 
 .car-outside-1 {
   clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
-  /* min-height: 403px; */
   min-height: 403px;
-  /* width: 329px; */
   background-image: url(../Images/car-grid/car-grid-1.jpg);
 }
 .car-outside-2 {
@@ -273,12 +235,8 @@ hr {
   background-color: rgba(0, 213, 255, 0.182);
 
   border-radius: 10px;
-  /* width: 170px; */
-  /* height: 170px; */
   padding: 10px;
   height: 100%;
-  /* position: absolute;
-  top: 5px; */
   background-color: #7e0167d7;
   color: white;
   display: flex;
@@ -309,7 +267,7 @@ hr {
   clip-path: polygon(0 3%, 100% 0, 100% 98%, 0 100%);
 }
 
-/* ---------****** ---- Footter-Row ------ *******---------- */
+/* -------------||  Footter-Row   ||-------------- */
 
 .footer-bg-img {
   padding: 0px;
@@ -339,8 +297,6 @@ hr {
   margin: 0px auto;
   margin-bottom: 20px;
 }
-/* .footer-col {
-} */
 .footer-col-1 {
   flex: 1 1 30%;
 }
@@ -354,20 +310,6 @@ hr {
   flex: 1 1 20%;
 }
 
-@media only screen and (max-width: 761px) {
-  .footer-row {
-    text-align: center;
-    flex-direction: column;
-    /* justify-content: center; */
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .footer-row {
-    margin-top: -100px;
-  }
-}
-
 i {
   margin: 5px;
   width: 20px;
@@ -378,15 +320,24 @@ i {
   margin-top: 0.5px;
   background-color: #271f6c;
   color: white;
-  /* text-align: center; */
   padding-top: 10px;
-  /* padding-bottom: 10px;  */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .copywrite p {
   display: block;
+}
+
+.gototop {
+  position: fixed;
+  right: 35px;
+  bottom: 25px;
+  font-size: 50px;
+  background-color: #271f6c;
+  border: #271f6c solid 2px;
+  border-radius: 100%;
+  width: 54px;
 }
 
 @media screen and (max-width: 900px) {
@@ -403,5 +354,42 @@ i {
   .car-grid-row {
     padding-left: 13px;
     padding-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar-brand {
+    padding-left: 0px;
+  }
+  #bmwmenu {
+    padding-right: 0px;
+  }
+  .topbar li a {
+    margin: 14px 9.1px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .leftcol {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+
+  .rightcol {
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  .footer-row {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-row {
+    margin-top: -100px;
   }
 }
